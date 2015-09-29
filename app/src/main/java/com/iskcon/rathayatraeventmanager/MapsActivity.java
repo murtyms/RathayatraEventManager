@@ -78,10 +78,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                m.setTitle(title);
                if(title.equals("Festival"))
                {
-                   m.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                   m.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.chariot));
                }else if(title.equals("Parade Start"))
                {
-                   m.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                   m.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.chariot));
                }
                builder.include(m.getPosition());
                markerList.add(m);
@@ -135,15 +135,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             {
                 if(m.getTitle().equals("Festival"))
                 {
-                    m.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                    m.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.chariot));
                 }else if(m.getTitle().equals("Parade Start"))
                 {
-                    m.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                    m.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.chariot));
                 }else
                 {
                     m.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
                 }
-
             }
         }
 
